@@ -4,7 +4,7 @@ namespace Aducworth\Openweather;
 
 class OpenWeather
 {
-	protected $endpoint = "http://api.openweathermap.org/data/2.5/weather";
+	protected static $endpoint = "http://api.openweathermap.org/data/2.5/weather";
 	
 	public function byZip($appid,$zip)
 	{
@@ -27,7 +27,7 @@ class OpenWeather
 		return json_decode( $response );
 	}
 	
-	public function getCurl($url)
+	public static function getCurl($url)
 	{
 		if(function_exists('curl_exec')) {
 			$ch = curl_init();
