@@ -1,0 +1,19 @@
+{
+    "name": "aducworth/openweather",
+    "description": "OpenWeatherMap API wrapper for Laravel 5",
+    "type": "library",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "authors": [
+        {
+            "name": "Austin Ducworth",
+            "email": "aducworth@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Aducworth\\Openweather": ["src"]
+        }
+    }
+}
